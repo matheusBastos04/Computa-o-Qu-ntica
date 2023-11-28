@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Computação Quântica</title>
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" id="mobile-menu">
+          ☰ <!-- Este é um ícone de menu, você pode substituir por um ícone real se preferir -->
+        </div>
+        <nav class="navbar">
+          <ul>
+            <a href="index.html" type="button" class="btn btn-outline-light">Home</a>
+            <a href="sobre.html" type="button" class="btn btn-outline-light">Sobre</a>
+            <a href="ingressar.html" type="button" class="btn btn-outline-light">Como Ingressar</a>
+            <a href="aplicacoes.html" type="button" class="btn btn-outline-light">Aplicações Práticas</a>
+            <a href="desafios.html" type="button" class="btn btn-outline-light">Desafios e Oportunidades</a>
+            <a href="matematica.html" type="button" class="btn btn-outline-light">Matemática da Computação Quântica</a>
+          </ul>
+        </nav>
+      </header>
+
+<div id="principal6">
+    <div id="descricao">
+        
+        <div id="texto">
+            <center>
+            <h1>Entendendo a Matemática por Trás da Computação Quântica</h1>
+            </center>
+            <justify>
+            <h5>Bits clássicos e bits quânticos</h5>
+            <p>Um bit (clássico) é um termo binário: basicamente, um valor numérico pertencente ao conjunto {0,1}. O valor do bit pode ter diversas interpretações físicas: pode ser uma tensão elétrica, uma corrente elétrica, uma carga, etc. A regra é: o bit clássico sempre valerá 0 ou 1, nunca 0 e 1 simultaneamente.
+                Os qubits (bits quânticos) são termos binários que podem assumir estados superpostos (a grosso modo, 1 e 0 ao mesmo tempo). Os estados desses bits quânticos devem ser representados como vetores.
+                Os qubits possuem duas bases ortonormais: |0⟩ e |1⟩, onde:</p>
+            </justify>  
+            <center>
+                <img src="img/1.jpg" height="100" width="400">
+            </center>
+            <br>   
+            <p>Como você deve ter reparado, um valor (como 0 ou 1) entre os caracteres “|” e “⟩” corresponde a um vetor. Este símbolo é chamado ket. Também existe o símbolo bra (“⟨…|”), para o qual ⟨x| corresponde à transposta conjugada do ket |x⟩. Neste caso, ⟨x|y⟩ é o produto interno dos vetores |x⟩ e |y⟩. Esta notação é chamada Bra-ket ou notação de Dirac. Os vetores que são representados pela notação Bra-ket pertencem a espaços de Hilbert — espaços vetoriais com noções de ângulo e distância que não necessariamente têm dimensões finitas.
+                Os possíveis estados de um qubit podem ser expressos pela seguinte combinação linear:</p> 
+            <center>
+                <img src="img/2.jpg" height="100" width="400">
+            </center>  
+            <br>
+            <p>Onde |ψ⟩ é um vetor no espaço vetorial ℂ² que representa o estado do qubit, e os coeficientes ω₀ e ω₁ são números complexos que representam as amplitudes de probabilidade dos estados |0⟩ e |1⟩.
+               Quando o estado |ψ⟩ é medido experimentalmente, manifesta um dos estados base |0⟩ e |1⟩ (fenômeno este que é conhecido na mecânica quântica como “colapso”). A probabilidade do estado |0⟩ se manifestar é |ω₀|² (quadrado do absoluto de ω₀), e a probabilidade do estado |1⟩ se manifestar é |ω₁|² (quadrado do absoluto de ω₁). Isto significa que:</p>
+            <center>
+                <img src="img/3.jpg" height="100" width="400">
+            </center> 
+            <br>
+            <h5>Esfera de Bloch</h5>
+            <p>Representar graficamente um vetor em ℂ² não é tão simples. Um único número complexo com parte imaginária diferente de zero é análogo a um vetor em ℝ² (uma dimensão para a parte real e outra para o fator real da unidade imaginária), e seguindo esta mesma lógica, um vetor em ℂ² é análogo a um vetor em ℝ⁴, que não pode ser representado graficamente usando o sistema de coordenadas cartesiano. No entanto, um vetor em ℂ² que representa especificamente o estado de um qubit pode ser generalizado pela seguinte fórmula:</p>
+            <center>
+                <img src="img/4.jpg" height="100" width="400">
+            </center>
+            <p>Onde θ e ϕ são ângulos em radianos.</p>
+            <p>Usando esta fórmula acima, é possível representar graficamente o estado de um qubit em coordenadas polares, como mostra a imagem a seguir:</p>
+            <center>
+                <img src="img/5.jpg" height="350" width="400">
+            </center>
+            <br>
+            <a href="https://medium.com/@filipe.chagas/uma-introdu%C3%A7%C3%A3o-%C3%A0-matem%C3%A1tica-da-computa%C3%A7%C3%A3o-qu%C3%A2ntica-22763e797b8d"><p>Clique Aqui </a>para acessar o material completo.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

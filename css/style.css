@@ -1,0 +1,143 @@
+#principal{
+    height: 1380px;
+}
+
+#principal2{
+    height: 930px;
+}
+
+#principal3{
+    height: 1130px;
+}
+
+#principal4{
+    height: 1030px;
+}
+
+#principal5{
+    height: 860px;
+}
+
+#principal6{
+    height: 1550px;
+}
+
+#img1{
+    height: 600px;
+}
+
+#descricao{
+    position: absolute;
+    left: 1%;
+    margin-top: 1%;
+    height: auto;
+    width: 98%;
+    background-color: #292929;
+    color: #fff;
+}
+
+#menu{
+    position: absolute;
+    left: 15%;
+    margin-top: 2%;
+}
+
+#texto{
+    position: relative;
+    margin-top: 2%;
+}
+
+#rodape{
+    position: relative;
+    top: 54%;
+    text-align: center;
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    background-color: #292929;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 2%;
+  }
+  
+  .menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Ocultar por padrão em telas grandes */
+  }
+  
+  .navbar {
+    display: flex;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 5px;
+  }
+
+
+
+
+
+/* Estilos para telas menores usando media query */
+@media only screen and (max-width: 768px) {
+
+    #img1{
+        max-width: 100%;
+        height: 40%;
+    }
+
+    img{
+        max-width: 100%;
+        height: 40%;
+    }
+
+  .menu-toggle {
+    display: block; /* Mostrar o botão de menu em telas menores */
+  }
+
+  .navbar {
+    display: none; /* Ocultar a navegação por padrão em telas menores */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .navbar.show {
+    display: flex; /* Mostrar a navegação quando o botão de menu é clicado */
+  }
+
+  video{
+    max-width: 100%;
+  }
+
+  .navbar li {
+    margin: 0;
+    text-align: center;
+  }
+}
