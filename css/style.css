@@ -132,7 +132,7 @@ body {
     display: flex; /* Mostrar a navegação quando o botão de menu é clicado */
   }
 
-  video{
+  iframe{
     max-width: 100%;
   }
 
