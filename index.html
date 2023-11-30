@@ -22,9 +22,7 @@
           </div>
       </div>
       <header>
-        <div class="menu-toggle" id="mobile-menu">
-          ☰ <!-- Este é um ícone de menu, você pode substituir por um ícone real se preferir -->
-        </div>
+        <button class="menu-toggle" id="mobile-menu">&#9776;</button>
         <nav class="navbar">
           <ul>
             <li><a href="index.html" type="button" class="btn btn-outline-light">Home</a></li>
@@ -52,6 +50,15 @@
                 </div>
                 </div>
           </div>
-  <script src="script.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            var mobileMenuButton = document.getElementById('mobile-menu');
+            var navbar = document.querySelector('.navbar');
+
+            mobileMenuButton.addEventListener('click', function() {
+              navbar.classList.toggle('show');
+            });
+          });
+          </script>
 </body>
 </html>
