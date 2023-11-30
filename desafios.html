@@ -8,21 +8,19 @@
     <title>Computação Quântica</title>
 </head>
 <body>
-    <header>
-        <div class="menu-toggle" id="mobile-menu">
-          ☰ <!-- Este é um ícone de menu, você pode substituir por um ícone real se preferir -->
-        </div>
-        <nav class="navbar">
-          <ul>
-            <a href="index.html" type="button" class="btn btn-outline-light">Home</a>
-            <a href="sobre.html" type="button" class="btn btn-outline-light">Sobre</a>
-            <a href="ingressar.html" type="button" class="btn btn-outline-light">Como Ingressar</a>
-            <a href="aplicacoes.html" type="button" class="btn btn-outline-light">Aplicações Práticas</a>
-            <a href="desafios.html" type="button" class="btn btn-outline-light">Desafios e Oportunidades</a>
-            <a href="matematica.html" type="button" class="btn btn-outline-light">Matemática da Computação Quântica</a>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <button class="menu-toggle" id="mobile-menu">&#9776;</button>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" type="button" class="btn btn-outline-light">Home</a></li>
+        <li><a href="sobre.html" type="button" class="btn btn-outline-light">Sobre</a></li>
+        <li><a href="ingressar.html" type="button" class="btn btn-outline-light">Como Ingressar</a></li>
+        <li><a href="aplicacoes.html" type="button" class="btn btn-outline-light">Aplicações Práticas</a></li>
+        <li><a href="desafios.html" type="button" class="btn btn-outline-light">Desafios e Oportunidades</a></li>
+        <li><a href="matematica.html" type="button" class="btn btn-outline-light">Matemática da Computação Quântica</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
     <div id="principal5">
@@ -44,5 +42,15 @@
         </div>
     </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var mobileMenuButton = document.getElementById('mobile-menu');
+      var navbar = document.querySelector('.navbar');
+
+      mobileMenuButton.addEventListener('click', function() {
+        navbar.classList.toggle('show');
+      });
+    });
+    </script>
 </body>
 </html>
